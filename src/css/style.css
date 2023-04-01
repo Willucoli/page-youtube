@@ -1,0 +1,62 @@
+
+html{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    background-color: #F7F7F7;
+    max-width: 900px;
+    display: grid;
+    grid-template-areas: "video-principal propaganda" "video-pricipal video-sugestao";
+    grid-template-columns: 1fr 270px;
+    grid-template-rows: 56px 1fr;
+    padding: 35px 38px 35px 19px;
+    gap: 20px;
+}
+
+.video-principal{
+    grid-area:video-principal;
+}
+.propaganda{
+    grid-area: propaganda;
+    
+}
+.video-sugestao{
+    grid-area: video-sugestao;
+}
+.video-sugestao .video{
+    display: flex;
+    gap: 4px;
+    margin-bottom: 16px;
+}
+.video-sugestao .video .titulo-minuatura{
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+.video-sugestao .video p{
+    font-size: 11px;
+    margin-bottom: 5px;
+    line-height: 13px;
+}
+.video-principal img{
+    margin-bottom: 12px;
+    width: 100%;
+}
+.video-principal .titulo{
+    font-size: 18px;
+    margin-bottom: 7px;
+    font-weight: 700;
+}
+.video-principal .visualicao{
+    font-size: 14px;
+    margin-bottom: 9px;
+}
+.video-principal .descricao{
+    font-size: 16px;
+}
